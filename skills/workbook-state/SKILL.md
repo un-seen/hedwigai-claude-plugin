@@ -12,6 +12,8 @@ A hedwigai workbook is one document: tabs of markdown, or an Excel or Word file.
 - **A schema guards the tables.** A workbook can carry a schema (`read_workbook_schema`): each table's columns, types, required cells, keys and references. An edit that breaks it is refused with a `SchemaError` per cell, so a tracker cannot drift into a shape the next reader does not expect.
 - **The file can stay where the user keeps it.** `link_workbook` makes a file in Google Drive or Dropbox the record: work starts from the file as it stands, and each new version is written back to the same file, its sharing and history kept.
 
+Edit a workbook the way you edit code: its tabs are markdown and its schema is text, every write is compiled against the schema, and a `SchemaError` names each cell that broke it, the way a compiler names a line. Fix those cells and write again; `read_workbook` returns the compiled current version. For a spreadsheet or Word file, `checkout_workbook` puts it in the `bash` shell to edit with scripts, and `commit_workbook` compiles it the same way.
+
 Reading, searching and writing workbooks yourself is free. Only `create_workbook` with `instruction`, and `update_workbook`, start research runs billed to the account; do not start one unless the user asked for research.
 
 ## When to use it, and when not
