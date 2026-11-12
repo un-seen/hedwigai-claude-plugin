@@ -1,0 +1,17 @@
+{
+  "name": "hedwigai",
+  "description": "hedwigai plugins for Claude Code: a system of record for the spreadsheets and documents your agent keeps.",
+  "owner": {
+    "name": "hedwigai",
+    "email": "hello@hedwigai.com"
+  },
+  "plugins": [
+    {
+      "name": "hedwigai",
+      "source": "./",
+      "description": "A system of record for the spreadsheets and documents your agent keeps: versioned, schema-checked workbooks, optionally linked to a file in Google Drive or Dropbox.",
+      "category": "productivity",
+      "homepage": "https://www.hedwigai.com"
+    }
+  ]
+}

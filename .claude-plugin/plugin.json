@@ -1,0 +1,27 @@
+{
+  "name": "hedwigai",
+  "version": "1.0.0",
+  "description": "A system of record for the spreadsheets and documents your agent keeps. Trackers, ledgers, decision logs, specs and handoffs live as versioned workbooks, optionally linked to a file in Google Drive or Dropbox. Every edit is checked against the workbook's schema before it is saved, and an edit made on an old version is refused, never merged over.",
+  "author": {
+    "name": "hedwigai",
+    "email": "hello@hedwigai.com",
+    "url": "https://www.hedwigai.com"
+  },
+  "homepage": "https://www.hedwigai.com",
+  "repository": "https://github.com/un-seen/hedwigai-claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "system of record",
+    "state",
+    "spreadsheet",
+    "xlsx",
+    "docx",
+    "google drive",
+    "dropbox",
+    "schema",
+    "versioning",
+    "mcp"
+  ],
+  "privacyPolicyUrl": "https://www.hedwigai.com/privacy",
+  "icon": ".claude-plugin/icon.png"
+}
